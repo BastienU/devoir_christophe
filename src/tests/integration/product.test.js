@@ -1,10 +1,7 @@
 import request from 'supertest';
 import app from '../../app';
 import { seed } from '../../seeders/seed.js';
-import { pool, createTables } from '../../config/database';
-
-const adminCredentials = { email: 'admin@example.com', password: 'admin123' };
-const userCredentials = { email: 'user@example.com', password: 'user123' };
+import { pool, createTables } from '../../config/database.js';
 
 describe('Product routes', () => {
   let adminToken;
